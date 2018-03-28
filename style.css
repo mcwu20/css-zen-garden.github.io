@@ -1,0 +1,228 @@
+/* css Zen Garden default style v1.02 */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the html as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/*fonts*/
+@font-face {
+    font-family: 'manicsea-webfont';
+    src: url('manicsea-webfont.eot');
+    src: url('manicsea-webfont.eot?#iefix') format('embedded-opentype'),
+         url('manicsea-webfont.woff2') format('woff2'),
+         url('manicsea-webfont.woff') format('woff'),
+         url('manicsea-webfont.ttf') format('truetype'),
+         url('manicsea-webfont.svg#manicsea-webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'seasalt-webfont';
+    src: url('seasalt-webfont.eot');
+    src: url('seasalt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('seasalt-webfont.woff2') format('woff2'),
+         url('seasalt-webfont.woff') format('woff'),
+         url('seasalt-webfont.ttf') format('truetype'),
+         url('seasalt-webfont.svg#seasalt-webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font-family:'Roboto Slab', georgia;
+	line-height: 1.88889;
+	color: black; 
+	background:url(seashell1.png) no-repeat bottom right fixed, url(beach-wallpaper-1.jpg) no-repeat fixed;
+	padding:0;
+	margin:0;
+	}
+p { 
+	font-size:15px;
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: italic normal 1.4em manicsea-webfont, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #67624c;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #916a08;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #f1b10e;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #b8860b;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	border:solid;
+	background: rgba(255,255,255,.75);	
+	padding: 0 125px 0 110px; 
+	margin:0 200px 0 100px; 
+	width:600px;
+	}
+
+
+.intro { 	
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 { 
+	font-family:manicsea-webfont;
+	font-size:50px;
+	margin-top: 10px;
+	display: block;
+	float: left;
+
+	text-indent: 22%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header h2 { 
+	font-family:manicsea-webfont;
+	font-size:30px;
+	position:absolute;
+	top:75px;
+	text-indent:6em;
+
+	white-space: nowrap;
+
+	}
+header {color:#002080;
+	padding-top: 20px;
+	margin-top:10px;
+	margin-left:-50px;
+	width:700px;
+	height: 150px;
+	background:url(seashell_border1.jpg);
+	background-size:cover;
+	border:ridge;
+}
+
+
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: left;
+	}
+.summary p {
+	font: italic 1.1em/2.2 'Roboto Slab', georgia; 
+	text-align: center;
+	}
+
+.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	}
+.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+.sidebar {
+	margin-left: 600px; 
+	position: fixed; 
+	top: 0; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	font: 13px 'Roboto Slab', georgia; 
+	background-color: rgba(255,255,255,.75); 
+	border-left:groove;
+	border-top:groove;
+	border-bottom:groove;
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 150px; 
+	}
+.sidebar h3.select { 
+	background: transparent url(h3.gif) no-repeat top left; 
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives { 
+	background: transparent url(h5.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	background: transparent url(h6.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #002080;
+	}
+.sidebar li a:visited {
+	color: #0033cc;
+	}
+
+
+.extra1 {
+	background: transparent url(cr2.gif) top left no-repeat; 
+	position: absolute; 
+	top: 40px; 
+	right: 0; 
+	width: 148px; 
+	height: 110px;
+	}
